@@ -9,6 +9,7 @@ on:
         options:
         - dev
         - qa
+        - sandbox
 
 jobs:
   manipulateScript:
