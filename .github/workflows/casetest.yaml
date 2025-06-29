@@ -12,6 +12,7 @@ on:
 
 jobs:
   manipulateScript:
+    runs-on: ubuntu-latest
     steps:
       - name: get source code
         uses: actions/checkout@v4
