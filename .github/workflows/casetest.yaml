@@ -20,3 +20,13 @@ jobs:
       - name: list contents
         run: |
           ls
+      - name: cat index.html
+        run: |
+          cat index.html
+      - name: run script
+        run: |
+          chmod +x ./manipulate.sh
+          ./manipulate.sh
+      - name: cat modified index.html
+        run: |
+          cat index.html
