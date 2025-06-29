@@ -25,7 +25,7 @@ jobs:
           cat index.html
       - name: run script
         run: |
-          $ENV=${{inputs.deployment_env}} 
+          ENV=${{inputs.deployment_env}} 
           echo $ENV
           chmod +x ./manipulate.sh
           ./manipulate.sh "$ENV"
