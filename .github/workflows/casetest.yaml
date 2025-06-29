@@ -1,0 +1,21 @@
+name: casetest
+on:
+  workflow_dispatch:
+    inputs:
+      deployment_env:
+        description: test inputs
+        type: choice
+        default: dev
+        options:
+        - dev
+        - qa
+
+jobs:
+  manipulateScript:
+    steps:
+      - name: get source code
+        uses: actions/checkout@v4
+
+      - name: list contents
+        run: |
+          ls
