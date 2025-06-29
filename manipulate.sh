@@ -1,8 +1,8 @@
 #! /bin/bash
-if [ "${{inputs.deployment_env}}" == "dev" ];then
+if [ "${1}" == "dev" ];then
     sed -i '/<head>/a\
     dev' index.html
-elif [ "${{inputs.deployment_env}}" == "qa" ];then
+elif [ "${1}" == "qa" ];then
     sed -i '/<head>/a\
     qa' index.html
 fi
